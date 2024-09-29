@@ -1,4 +1,7 @@
 # DG-CASGRADES
+Una app con la que la gestion de notas, asignaturas y contenidos sea más facil y eficaz.
+Con funcionalidades como el calculo de notas finales, promedios, registro de apuntes y recursos de apoyo
+para cada asignatura, y todo en simples pasos gracias a su interfaz amigable.
 
 ## Repositorio App
 Este es un repositorio de prueba para la sincronización del codigo en vscode con github.
