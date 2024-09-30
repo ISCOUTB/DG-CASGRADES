@@ -4,6 +4,8 @@ Con funcionalidades como el calculo de notas finales, promedios, registro de apu
 para cada asignatura, y todo en simples pasos gracias a su interfaz amigable.
 
 ## Repositorio App
+PRUEBA DE SINCRONIZACION
+
 Este es un repositorio de prueba para la sincronización del codigo en vscode con github.
 Aqui se va a estar cargando los avances del proyecto de aula.
 El proposito es mantener actualizado este repositorio de forma remota con el trabajo que se vaya realizando de forma local,
