@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_casgrades/modelos/usuario.dart';
+import 'package:flutter_app_casgrades/pantallas/asignaturas_screen.dart';
 import 'package:flutter_app_casgrades/pantallas/average_screen.dart';
 import 'package:flutter_app_casgrades/pantallas/grades_screen.dart';
 import 'package:flutter_app_casgrades/pantallas/login_screen.dart';
@@ -20,8 +21,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => LoginScreen(),
-        '/grades': (context) => GradeScreen(),
-        '/average': (context) => AverageScreen(),
+        '/grades': (context) => NotasScreen(asignaturaId: ,),
+        '/average': (context) => AverageScreen(grades: [],),
         //otro menu ruta
         '/menu': (context) => MenuScreen(usuario: ModalRoute.of(context)!.settings.arguments as Usuario),
         '/asignaturas': (context) => AsignaturasScreen(),
