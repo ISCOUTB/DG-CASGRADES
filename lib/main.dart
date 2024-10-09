@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_casgrades/modelos/usuario.dart';
-import 'package:flutter_app_casgrades/pantallas/asignaturas_screen.dart';
-import 'package:flutter_app_casgrades/pantallas/average_screen.dart';
-import 'package:flutter_app_casgrades/pantallas/grades_screen.dart';
-import 'package:flutter_app_casgrades/pantallas/login_screen.dart';
-import 'package:flutter_app_casgrades/pantallas/menu_screen.dart';
+import 'frontend/screens/login_screen.dart';
+import 'frontend/screens/menu_screen.dart';
+import 'frontend/screens/asignaturas_screen.dart';
+import 'frontend/screens/notas_screen.dart';
+import 'frontend/screens/usuarios_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,16 +17,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CASGRADES',
-      initialRoute: '/',
+      // INICIO NUEVO CODE
+      initialRoute: '/login',
       routes: {
-        '/': (context) => LoginScreen(),
-        '/grades': (context) => NotasScreen(asignaturaId: ,),
-        '/average': (context) => AverageScreen(grades: [],),
-        //otro menu ruta
-        '/menu': (context) => MenuScreen(usuario: ModalRoute.of(context)!.settings.arguments as Usuario),
+        '/login': (context) => LoginScreen(),
+        '/menu': (context) => MenuScreen(),
         '/asignaturas': (context) => AsignaturasScreen(),
-        // Otras rutas...
+        '/notas': (context) => NotasScreen(),
+        '/usuarios': (context) => UsuariosScreen(),
       },
+      // FIN NUEVO CODE
       theme: ThemeData(
         // This is the theme of your application.
         //
